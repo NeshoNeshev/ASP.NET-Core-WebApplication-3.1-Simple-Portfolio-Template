@@ -1,0 +1,59 @@
+﻿[
+  {
+    "Period": "January 2020 - until now",
+    "Specialty": "Software engineering",
+    "Degree": "Professionally",
+    "EducationalInstitution": "Software University",
+    "Location": "Sofia",
+    "SchoolItems": [
+      {
+        "Subjects": "Programming Basics",
+        "Date": "11.11.2020",
+        "CertificatesLink": "https://",
+        "Description": "In this course I gained the basic knowledge of the basics of programming such as loops, nested loops, simple operations and Conditional statements"
+      },
+      {
+        "Subjects": "C# Fundamentals",
+        "Date": "11.01.2020",
+        "CertificatesLink": "https://",
+        "Description": "This course gave me in-depth knowledge of programming such as working with arrays, regular expressions and text processing."
+      },
+      {
+        "Subjects": "C# Advanced",
+        "Date": "11.11.2020",
+        "CertificatesLink": "https://",
+        "Description": "This course gave me in-depth knowledge of programming such as working with Stacks, Queues,Multidimensional Arrays,Dictionaries, Streams, Functional Programming and Generics."
+      },
+      {
+        "Subjects": "C# Objective Oriented Programming",
+        "Date": "11.11.2020",
+        "CertificatesLink": "https://",
+        "Description": "This course gave me in-depth knowledge of the four principles of object-oriented programming encapsulation, abstraction, inheritance, and polymorphism and SOLID principies."
+      },
+      {
+        "Subjects": "MS SQL",
+        "Date": "11.11.2020",
+        "CertificatesLink": "https://",
+        "Description": "In this course I gained in-depth knowledge of relational database, CRUD oparations, Functions, Stored Procedures, Transactions and Triggers."
+      },
+      {
+        "Subjects": "Entity Framework Core",
+        "Date": "11.11.2020",
+        "CertificatesLink": "https://",
+        "Description": "In this course I learned relational databases as well as working with ADO.NET, Entity Framework Core, LINQ, Data Transfer Objects, AutoMapper, JSON and XML."
+      },
+      {
+        "Subjects": "C# Web Basics",
+        "Date": "11.11.2020",
+        "CertificatesLink": "",
+        "Description": "In this course I learned HTTP Protocol, Asynchronous Processing,State Management Basic MVC, MVC View Engine, MVC Advanced - IoC and Data Binding and create own Web Server"
+      },
+      {
+        "Subjects": "ASP.NET CORE",
+        "Date": "11.11.2020",
+        "CertificatesLink": "",
+        "Description": "In this course I learned Razor Views, Application Flow, Filters & Middleware, Model Binding, Model Validation, Working with Files, Web API, Unit Testing, Mocking, Integration Testing, Selenium, Web Application Designs, Web Application Architectures, Repository Pattern, AutoMapper, WebHost, Logging; Cache, Sessions, GDPR, SignalR, Azure, Deployment & CI and Blazor"
+      }
+    ]
+  }
+]

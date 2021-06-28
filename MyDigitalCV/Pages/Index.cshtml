@@ -1,0 +1,67 @@
+﻿@page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "Home page";
+}
+<section id="home" class="d-flex align-items-center">
+    <div class="container position-relative" data-aos="fade-up" data-aos-delay="100">
+        <div class="row justify-content-center">
+            <div class="col-xl-7 col-lg-9 text-center">
+                <h1><span class="typed" data-typed-items="Hello ! I'm @Model.PrivacyInformationModel.FirstName  @Model.PrivacyInformationModel.ThirdName, I'm a talented developer based in Bulgaria"></span></h1>
+               
+            </div>
+        </div>
+
+        <div class="text-center">
+            <a asp-page="/About" class="btn-get-started">About me</a>
+        </div>
+        <div class="links">
+            <a href="@GlobalConstants.Facebook" target="_blank"><i class="bx bxl-facebook" style="font-size: 1.5em;"></i></a>
+            <a href="@GlobalConstants.Github" target="_blank"><i class="bx bxl-github" style="font-size: 1.5em;"></i></a>
+            <a href="@GlobalConstants.LinkedIn" target="_blank"><i class="bx bxl-linkedin" style="font-size: 1.5em;"></i></a>
+        </div>
+        <div class="row icon-boxes">
+            @foreach (var item in Model.HomeModel.IndexContent)
+            {
+                <div class="col-md-6 col-lg-3  align-items-stretch mb-5 mb-lg-0" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="icon-box">
+                        <h4 class="title"><a asp-page="/@item.Key">@item.Key</a></h4>
+                        <p class="description">@item.Value</p>
+                    </div>
+                </div>
+            }
+
+
+        </div>
+    </div>
+</section>
+@section Scripts{
+    <script >
+        (function () {
+            "use strict";
+
+            const select = (el, all = false) => {
+                el = el.trim()
+                if (all) {
+                    return [...document.querySelectorAll(el)]
+                } else {
+                    return document.querySelector(el)
+                }
+            }
+
+            const typed = select('.typed')
+            if (typed) {
+                let typed_strings = typed.getAttribute('data-typed-items')
+                typed_strings = typed_strings.split(',')
+                new Typed('.typed', {
+                    strings: typed_strings,
+                    loop: true,
+                    typeSpeed: 100,
+                    backSpeed: 50,
+                    backDelay: 2000
+                });
+            }
+        })()
+    </script>
+}

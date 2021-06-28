@@ -1,0 +1,33 @@
+﻿@page
+@model CertificateViewModel
+@{
+    ViewData["Title"] = "Certificates";
+}
+<div class="section-title">
+    <h2 class="headertekst">Certificates</h2>
+    <a href="@GlobalConstants.Facebook" target="_blank"><i class="bx bxl-facebook" style="font-size: 1.5em;"></i></a>
+    <a href="@GlobalConstants.Github" target="_blank"><i class="bx bxl-github" style="font-size: 1.5em;"></i></a>
+    <a href="@GlobalConstants.LinkedIn" target="_blank"><i class="bx bxl-linkedin" style="font-size: 1.5em;"></i></a>
+</div>
+<div class="container">
+    <div class="row">
+        @foreach (var certificate in Model.SubjectsModels)
+        {
+            if (certificate.CertificatesLink != String.Empty)
+            {
+                <div class="col-md-4 text-center d-flex ftco-animate">
+                    <a href="@certificate.CertificatesLink.ToString()" class="certificate" target="_blank">
+                        <span class="icon">
+                            <i class="bx bx-certification"></i>
+                        </span>
+                        <div class="desc">
+                            <h3 class="mb-5">Software University</h3>
+                            <h3 class="mb-5">@certificate.Subjects</h3>
+                            <h3 class="mb-5">@certificate.Date</h3>
+                        </div>
+                    </a>
+                </div>
+            }
+        }
+    </div>
+</div>
